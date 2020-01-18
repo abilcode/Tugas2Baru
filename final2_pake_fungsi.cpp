@@ -35,6 +35,8 @@ int main ()
 	}
 	show_pers(arr1, d1);		
 	
+	if (mode!=4){
+	
 	cout << "Masukkan pangkat tertinggi pada polinomial 2 : ";
 	cin >> d2;
 	int arr2 [d2 + 1] {};
@@ -45,7 +47,7 @@ int main ()
 	}
 
 	show_pers(arr2, d2);
-					
+	}		
 	switch (mode)
 	{
 		case 1:
