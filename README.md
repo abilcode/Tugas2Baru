@@ -1,5 +1,5 @@
 # Tugas2Baru
-ini hampir final tolong dibantu wkww
+tugas2.cpp file yang dipakai
 
 M. Arya Nughraga          16019017
 M. Nabil Fadhlurrahman    16019025
