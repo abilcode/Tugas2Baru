@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int mode, i, j, d1, d2,k,l,m,n,turunan,derajat,M,N;
+int mode, i, j, d1, d2,k,l,m,n,turunan,derajat,M,N,c;
 int main ()
 {
 	cout << "1. Penjumlahan \n2. Pengurangan \n3. Perkalian \n4. Turunan \nPilih operasi : ";
@@ -160,6 +160,7 @@ int main ()
 		
 		case 2:
 		{
+			c = 0;
 			cout << "Masukan derajat polinom 1 :";
 			cin >> d1;
 			int arr1 [d1 + 1] {};
@@ -197,7 +198,7 @@ int main ()
 				
 				for ( i = d1; i >= 0; --i)
 				{
-					
+					if (c != d1){
 					if ( arrj[i] != 0 && arr1[i]-arr2[i] != 0 )
 					{
 						if ( i == d1)
@@ -253,15 +254,19 @@ int main ()
 					}
 					else if (arr1[i]-arr2[i] == 0)
 					{
-						cout << "0";
-						break;
+						c = c + 1;
 					}
 					
 					else 
 					{
 						continue ;
 					}
+				}
+				else if(c == d1)
+				{
+					cout << "0";
 				}	
+			}
 			}
 			else 
 			{
