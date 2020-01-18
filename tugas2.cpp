@@ -57,7 +57,7 @@ int main ()
 						{
 							if (arrj[i+1] == 0)
 							{
-							cout << arrj[i] << "X";
+							continue;
 							}
 							else
 							{
